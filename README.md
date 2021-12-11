@@ -5,3 +5,4 @@
 * [변수, 타입, 연산자](https://github.com/younlll/TIL/blob/main/Java/variable_type_operator.md)
 * [JVM](https://github.com/younlll/TIL/blob/main/Java/JVM.md)
 * [Class](https://github.com/younlll/TIL/blob/main/Java/Class.md)
+* [Inheritance](https://github.com/younlll/TIL/blob/main/Java/Inheritance.md)
