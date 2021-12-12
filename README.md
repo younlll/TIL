@@ -4,8 +4,11 @@
     오늘 공부한 내용을 오늘 정리하기
     1일 1커밋을 목표!!
     
+> 잘못 학습하거나 게시된 글의 수정과 조언은 환영입니다
+    
 ### Java
 * [변수, 타입, 연산자](https://github.com/younlll/TIL/blob/main/Java/variable_type_operator.md)
 * [JVM](https://github.com/younlll/TIL/blob/main/Java/JVM.md)
 * [Class](https://github.com/younlll/TIL/blob/main/Java/Class.md)
 * [Inheritance](https://github.com/younlll/TIL/blob/main/Java/Inheritance.md)
+* [Interface](https://github.com/younlll/TIL/blob/main/Java/Interface.md)
