@@ -78,4 +78,8 @@ public class ExceptoinThrowExample {
 
 
 
+### Reference
+> 이것이 자바다 - 신용권 지음</br>
+[codehcacha-trhow와 throws의 차이점](https://codechacha.com/ko/java-throw-and-throws/)</br>
+[점프 투 자바-예외처리](https://wikidocs.net/229)
 
