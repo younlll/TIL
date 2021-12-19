@@ -19,11 +19,4 @@
 
 ### Spring
 ####  토비의 스프링
-* [1장. 오브젝트와 의존관계 - 1.1 초난감 DAO](https://github.com/younlll/TIL/blob/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies/1.1_very_annoying_DAO.md)
-* [1장. 오브젝트와 의존관계 - 1.2 DAO의 분리](https://github.com/younlll/TIL/blob/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies/1.2_Separation_of_DAO.md)
-* [1장. 오브젝트와 의존관계 - 1.3 DAO의 확장](https://github.com/younlll/TIL/blob/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies/1.3_Expansion_of_DAO.md)
-* [1장. 오브젝트와 의존관계 - 1.4 제어의 역전](https://github.com/younlll/TIL/blob/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies/1.4_Inversion_of_Control.md)
-* [1장. 오브젝트와 의존관계 - 1.5 스프링의 IoC](https://github.com/younlll/TIL/blob/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies/1.5_IoC_of_Spring.md)
-* [1장. 오브젝트와 의존관계 - 1.6 싱글톤 레지스트리와 오브젝트 스코프](https://github.com/younlll/TIL/blob/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies/1.6_Singleton_registry_and_object_scope.md)
-* [1장. 오브젝트와 의존관계 - 1.7 의존관계 주입](https://github.com/younlll/TIL/blob/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies/1.7_Dependency_Injection.md)
-* [1장. 오브젝트와 의존관계 - 1.8 XML을 이용한 설정](https://github.com/younlll/TIL/blob/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies/1.8_Configuration_using_XML.md)
+* [1장. 오브젝트와 의존관계](https://github.com/younlll/TIL/tree/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies)
