@@ -21,4 +21,5 @@
 ####  토비의 스프링
 * [1장. 오브젝트와 의존관계](https://github.com/younlll/TIL/tree/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies)
 * [2장. 테스트](https://github.com/younlll/TIL/tree/main/Toby_Spring3.1/Chapter2_Test)
+* [3장. 템플릿](https://github.com/younlll/TIL/tree/main/Toby_Spring3.1/Chapter3_Template)
 
