@@ -19,7 +19,7 @@
 #### 4. 메모리를 자동으로 관리한다
 -   객체 생성 시 자동적으로 메모리 영역을 찾아서 할당하고, 사용이 완료되면 GC(Garbage Collector)를 실행시켜 자동적으로 사용하지 않는 객체를 메모리에서 해제 시켜준다
 -   이 내용을 공부하면서 GC가 알아서 메모리를 해제 해주는데 자바 코드에서 close() 메서드를 명시해주는 이유가 무엇일지 궁금증이 생겼다
--   이 궁금증에 대한 내용은 [_Java에 GC가 있지만 close() 메서드를 사용하는 이유_](https://github.com/younlll/TIL/blob/main/Java/About_GC_and_the_close_method.md)에 정리해 두었다
+-   이 궁금증에 대한 내용은 [Java에 GC가 있지만 close() 메서드를 사용하는 이유](https://github.com/younlll/TIL/blob/main/Java/About_GC_and_the_close_method.md)에 정리해 두었다
 
 </br>
 
