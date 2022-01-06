@@ -11,6 +11,7 @@
 * [Java특징](https://github.com/younlll/TIL/blob/main/Java/Java_Features.md)
 * [Java에서 GC와 close() 메서드](https://github.com/younlll/TIL/blob/main/Java/About_GC_and_the_close_method.md)
 * [변수, 타입, 연산자](https://github.com/younlll/TIL/blob/main/Java/variable_type_operator.md)
+* [참조 타입](https://github.com/younlll/TIL/blob/main/Java/Reference_type.md)
 * [JVM](https://github.com/younlll/TIL/blob/main/Java/JVM.md)
 * [Class](https://github.com/younlll/TIL/blob/main/Java/Class.md)
 * [Inheritance](https://github.com/younlll/TIL/blob/main/Java/Inheritance.md)
