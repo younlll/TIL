@@ -26,3 +26,7 @@
 * [2장. 테스트](https://github.com/younlll/TIL/tree/main/Toby_Spring3.1/Chapter2_Test)
 * [3장. 템플릿](https://github.com/younlll/TIL/tree/main/Toby_Spring3.1/Chapter3_Template)
 
+</br></br>
+
+### 컴퓨터 기초
+* [음수 계산을 위한 보수법 - 1의 보수와 2의 보수](https://github.com/younlll/TIL/blob/main/Computer_Basic/one_complement_and_two_complement.md)
