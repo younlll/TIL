@@ -30,3 +30,4 @@
 
 ### 컴퓨터 기초
 * [음수 계산을 위한 보수법 - 1의 보수와 2의 보수](https://github.com/younlll/TIL/blob/main/Computer_Basic/one_complement_and_two_complement.md)
+* [부동소수점](https://github.com/younlll/TIL/blob/main/Computer_Basic/Floating_Point.md)
