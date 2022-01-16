@@ -9,6 +9,13 @@
 * 만약 모든 조건식을 검사할때까지 true인 조건식이 없다면 else문의 코드를 실행시킨다
 * `중첩 if문`은 말그대로 if문이 중첩된 경우를 말하며 중첩된 if문 또한 위에 설명된 if문과 동일하게 처리된다
 
+![image](https://user-images.githubusercontent.com/62369538/149642737-f205a23d-b558-4030-8d3c-1bcef4420759.png)
+
+* 위 예제를 보면 score 변수에 97이라는 값이 들어가 있고
+* **if문에서 score == 100라는 조건식에 false를 산출**받기 때문에 **if문의 중괄호 안에 있는 내용은 실행되지 않는다**
+* else if문으로 넘어와 **score >= 90 조건식에서 true를 리턴**받기 때문에 **else if문의 중괄호 안의 식을 실행**한다
+* 만약, **if문과 모든 else if문에서 false를 리턴받았다면 else문을 실행**하게 된다
+
 ### switch문
 * `switch`조건문은 switch(변수)에 있는 변수의 값을 순차적으로 case문에 있는 값과 같은지 비교하며 수행한다
 * 같은 값이 있는 case문에 대해서만 코드를 수행시킨다
@@ -22,16 +29,51 @@
       수행할 코드 작성;
     }
 
+```java
+// Ex1.
+int sum = 0;
+for(int i = 1; i <= 100; i++) {
+    sum = sum + i;
+}
+System.out.pirntln("1~100까지의 합: " + sum);
+/*************************
+ * output:               *
+ * 1~100까지의 합: 5050   *
+ *************************/
+```
+
 * 초기화식을 통해 초기화된 변수의 값이 증감식을 통해 조건식을 만족할때까지 반복하여 코드를 수행한다
 * 식이 2개 이상이 있을수도 있다
+  * `for(int i = 0, j = 100; i <= 50 && j >= 50; i++, j--) { ... }`
 
 ### while문
     while(조건식) {
       수행할 코드 작성;
     }
 
+```java
+Ex2.
+public class WhilePrimetExample {
+  public static void main(String[] args) {
+    int i = 1;
+    while(i <= 10) {
+      System.out.print(i + " ");
+      i++;
+    }
+  }
+}
+
+/************************
+ * output:              *
+ * 1 2 3 4 5 6 7 8 9 10 *
+ ************************/
+```
+
 * 조건식의 결과값이 true일때까지 반복하여 코드를 수행한다
 * 처음부터 조건식의 결과값이 false라면 코든는 while문의 내부 코드는 한번도 수행되지 않는다
+
+![image](https://user-images.githubusercontent.com/62369538/149643086-03e154f2-9448-4ca8-a86a-3a06feb9f7b7.png)
+
 
 ### do-while문
     do {
