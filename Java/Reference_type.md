@@ -31,14 +31,15 @@ String name = "youn"; // 참조타입
 
 <img src="https://user-images.githubusercontent.com/62369538/148268144-ed87184d-d2d8-410a-81aa-0e0daf4b4210.PNG" width="350" height="250"/>
 
-    var1 == var2 → true
-    var1 == var3 → false
-    var1 != var3 → true
+    var1 == var2 → true / 같은 주소를 바라봄
+    var1 == var3 → false / 다른 주소를 바라봄
+    var1 != var3 → tru
 
 </br>
 
 ## null과 NullPointerException
 * 참조 타입 변수가 null을 가지고 있을 경우, 참조할 객체의 주소값이 없는 것이므로 참조 타입 변수를 사용할 수 없다
+* null값의 주소를 참조하는 변수를 사용하게 되면 NullPointerException이 발생한다
 
 </br>
 
@@ -58,6 +59,9 @@ String name = "youn"; // 참조타입
 
     str1.equals(str2);
 
+* String과 같이 new를 사용하지 않고 리터럴을 사용한 객체는 **consant pool을 이용하게 된다**
+* 그래서 **상수풀에 동일한 문자열이 있으면 그 주소값을 반환**하게 되어 다른 변수이지만 같은 주소값을 갖게 되고 이런경우 == 연산자로 비교하면 같은 주소값이므로 true가 반환된다
+
 </br>
 
 ## 배열 타입
@@ -76,6 +80,7 @@ String name = "youn"; // 참조타입
     // 값 초기화
     dataType[] varName = {val1, val2, val3, ...};
 
+* 참조할 배열 객체가 없다면 배열 변수를 null로 초기화 할 수 있다
 * 위와 같이 배열 항목에 저장될 값의 목록을 만들어 준다면 아래처럼 스택 영역과 힙 영역에 변수와 객체가 생성이 될 것이다
 
 <img src="https://user-images.githubusercontent.com/62369538/148271756-4e92ba37-b571-4bc1-b541-a83b7680a716.PNG" height="300" width="400"/>
@@ -91,7 +96,7 @@ String name = "youn"; // 참조타입
 * length 필드는 읽기 전용 필드이기 때문에 값의 변경을 할 수 없다
 
 ### 커맨드 라인 입력
-* Java의 main 메소드를 보면 `public static void main(String[] args) {...}`로 구성되어 잇다
+* Java의 main 메소드를 보면 `public static void main(String[] args) {...}`로 구성되어 있다
 * 여기서 String[] args는 커맨드 창에서 `java 클래스명`으로 프로그램을 실행시키면
 * JVM은 길이가 0인 배열을 먼저 생성하고 main() 메소드를 호출할 때 매개값으로 전달한다
 * 만약 `java 클래스명` 뒤에 공백으로 구분된 문자열 목록을 주고 실행시키면 문자열 목록으로 구성된 String[] 배열이 생성되고
@@ -163,6 +168,9 @@ System.out.println(arr1[0] + ", " + arr1[1]);
       실행문;
      }
 
+![image](https://user-images.githubusercontent.com/62369538/149644007-ed651696-91e5-4446-8312-7b2177d0cd98.png)
+
+
 </br>
 
 ## 열거 타입
@@ -175,10 +183,13 @@ System.out.println(arr1[0] + ", " + arr1[1]);
 * 열거 객체의 메소드를 상용 할 수 있는 이유는 모든 열거 타입은 컴파일 시에 Enum 클래스를 상속하게 되어 있기 때문이다
 
 **name()**
-* 열거 객체가 갖고 잇는 문자열 리턴
+* 열거 객체가 갖고 있는 문자열 리턴
 
 **ordinal()**
 * 전체 열거된 객체 중 몇번째 열거 객체인지 알려준다
+
+        Week today = Week.SUNDAY;
+        int ordinal = today.ordinal();  // output: 6
 
 **compareTo()**
 * 매개 값으로 주어진 열거 객체를 기준으로 전후로 몇 번째 위치하는지 비교
@@ -187,7 +198,7 @@ System.out.println(arr1[0] + ", " + arr1[1]);
 * enumVar1이 enumVar2보다 뒤에 있는 경우 양수의 결과를 얻을 수 있다
 
 **valueOf()**
-* 매개 밗으로 주어지는 문자열과 동일한 문자열을 가지는 열거 객체를 리턴
+* 매개 값으로 주어지는 문자열과 동일한 문자열을 가지는 열거 객체를 리턴
 
 **values()**
 * 열거 타입의 모든 열거 객체들을 배열로 만들어 리턴
