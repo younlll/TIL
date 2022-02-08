@@ -28,7 +28,7 @@ Runnable runnable = () -> { ... }
 
 ## 타겟 타입과 함수적 인터페이스
 ### 함수적 인터패이스
-* 람다식이 하나의 메소드를 정의하기 때문에 두 개 이상의 추상 메소드가 선언된 인터페이스느 ㄴ람다식을 이용해서 구현 객체를 생성할 수 없다
+* 람다식이 하나의 메소드를 정의하기 때문에 두 개 이상의 추상 메소드가 선언된 인터페이스는 람다식을 이용해서 구현 객체를 생성할 수 없다
 * 하나의 추상 메소드가 선언된 인터페이스만 람다식의 타겟 타입이 될 수 있다
 * 이러한 인터페이스를 `함수적 인터페이스`라고 한다
 * 함수적 인터페이스를 작성할 때 두 개 이상의 추상 메소드가 선언되지 않도록 컴파일러가 확인하는 기능이 있는데. 인터페이스 선언 시 @FunctionalInterface 어노테이션을 붙이면 된다
@@ -42,3 +42,104 @@ public interface MyFunctionalInterface {
 ```
 
 ### 매개 변수와 리턴값이 없는 람다식
+```java
+@FunctionalInterface
+public interface MyFunctionalInterfaace {
+    public void method();
+}
+```
+
+```java
+public class MyFunctionalInterfaceExample {
+    public static void main(String[] args) {
+        MyFunctionalInterface fi;
+
+        fi = () -> {
+            String str = "method call1"l
+            System.out.println(str);
+        };
+        fi.method();
+
+        fi = () -> { System.out.println("method call2"); };
+        fi.method();
+
+        fi = () -> System.out.println("method call3");
+        fi.method();
+    }
+}
+```
+
+### 매개 변수가 있는 람다식
+```java
+@FunctionalInterface
+public interface MyFunctionalInterface {
+    public void method(int x);
+}
+```
+
+```java
+public class MyFunctionalInterfaceExample {
+    public static void main(String[] args) {
+        MyFunctionalInterface fi;
+
+        fi = (x) -> {
+            int result = x + 5;
+            System.out.println(result);
+        };
+        fi.method(2);
+
+        fi = (x) -> { System.out.println(x*5); }
+        fi.method(2);
+
+        fi = x -> System.out.println(x*5);
+        fi.method(2);
+    }
+}
+```
+
+### 리턴값이 있는 람다식
+```java
+@FunctionalInterface
+public interface MyFunctionalInterface {
+    public int method(int x, int y);
+}
+```
+
+```java
+public class MyFunctionalInterfaceExample {
+    public static void main(String[] args) {
+        MyFunctionalInterface fi;
+
+        fi = (x, y) -> {
+            int result = x + y;
+            return result;
+        };
+        System.out.println(fi.method(2, 5));
+
+        fi = (x, y) -> { return x + y; };
+        System.out.println(fi.method(2, 5));
+
+        fi = (x, y) -> sum(x, y);
+        System.out.println(fi.method(2, 5));
+        
+    }
+
+    public static int sum(int x, int y) {
+        return (x + y);
+    }
+}
+```
+
+</br>
+
+## 클래스 멤버와 로컬 변수 사용
+### 클래스의 멤버 사용
+* 클래스의 멤버인 필드와 메소드를 제약 사향 없이 사용할 수 있다
+* 람다식에서 this는 람다식을 실행한 객체의 참조이다
+
+<img src="./image/lambda_01.png">
+
+</br></br>
+
+### Reference
+> 이것이 자바다 - 신용권지음
