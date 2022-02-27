@@ -21,6 +21,14 @@
 
 </br></br>
 
+### 객체지향
+#### [스터디 정리]객체지향의 사실과 오해
+* [01. 협력하는 객체들의 공동체](https://github.com/younlll/TIL/blob/main/ObjectOrented/01_%ED%98%91%EB%A0%A5%ED%95%98%EB%8A%94_%EA%B0%9D%EC%B2%B4%EB%93%A4%EC%9D%98_%EA%B3%B5%EB%8F%99%EC%B2%B4.md)
+* [02. 이상한 나라의 객체](https://github.com/younlll/TIL/blob/main/ObjectOrented/02_%EC%9D%B4%EC%83%81%ED%95%9C_%EB%82%98%EB%9D%BC%EC%9D%98_%EA%B0%9D%EC%B2%B4.md)
+* [03. 타입과 추상화](https://github.com/younlll/TIL/blob/main/ObjectOrented/03_%ED%83%80%EC%9E%85%EA%B3%BC_%EC%B6%94%EC%83%81%ED%99%94.md)
+
+</br></br>
+
 ### Spring
 ####  토비의 스프링
 * [1장. 오브젝트와 의존관계](https://github.com/younlll/TIL/tree/main/Toby_Spring3.1/Chapter1_Objects_and_Dependencies)
