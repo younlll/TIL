@@ -26,5 +26,5 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 
 ## 해결 방법
 ```properties
-pring.datasource.url=jdbc:mysql://[엔드포인트]:3306/[사용할 데이터베이스]?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8
+spring.datasource.url=jdbc:mysql://[엔드포인트]:3306/[사용할 데이터베이스]?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8
 ```
