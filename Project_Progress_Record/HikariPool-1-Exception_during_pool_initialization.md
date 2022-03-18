@@ -1,4 +1,4 @@
-# HikariPool-1 - Exception during pool initialization
+# HikariPool-1 - Exception during pool initialization - SQLNonTransientConnectionException
 
 ## 발생 원인
 
